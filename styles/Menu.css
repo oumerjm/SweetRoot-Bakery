@@ -1,0 +1,191 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Inter:wght@400;500&display=swap');
+
+/* CSS Variables */
+:root {
+  --primary: #5E3023;
+  --secondary: #D85A3D;
+  --accent: #F7A440;
+  --light: #FFF8F0;
+  --dark: #2A1A1F;
+  --text: #333;
+  --transition: all 0.3s ease;
+  --spacing: 1rem;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Styles */
+body {
+  font-family: 'Irish Grover', cursive;
+  color: var(--text);
+  background-color: var(--light);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: var(--transition);
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary);
+  padding: var(--spacing);
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  background-color: var(--accent);
+  color: var(--dark);
+  transform: translateY(-2px);
+}
+
+/* Menu Section Styles */
+section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 var(--spacing);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--secondary);
+  margin: 2rem 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin: 1.5rem 0 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+li {
+  background-color: white;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  transition: var(--transition);
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--secondary), rgba(0, 0, 0, 0));
+  margin: 2rem 0;
+}
+
+p strong {
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.visit-us {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.address {
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  nav {
+    gap: 1rem;
+  }
+  
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  ul {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 0 1rem;
+  }
+  
+  ul {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

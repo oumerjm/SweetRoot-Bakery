@@ -1,0 +1,142 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Irish+Grover&family=Instrument+Serif:ital@0;1&family=Island+Moments&display=swap');
+
+/* CSS Variables */
+:root {
+  --primary: #2d3436;
+  --secondary: #e74c3c;
+  --text: #333;
+  --light: #f9f9f9;
+  --spacing: 1rem;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+/* Navigation - Inter */
+header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* Tagline - Island Moments */
+section:first-of-type p {
+  font-family: 'Island Moments', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  line-height: 1;
+}
+
+/* Order Now Button - Irish Grover */
+section:first-of-type button {
+  font-family: 'Irish Grover', cursive;
+  font-size: 1.2rem;
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* Best Sellers Title - Irish Grover */
+h2 {
+  font-family: 'Irish Grover', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
+
+/* Discount Line - Instrument Serif */
+.newsletter p {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.4rem;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* Product Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.product-item {
+  text-align: center;
+}
+
+.price {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+.product-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.product-item button {
+  font-family: 'Inter', sans-serif;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.visit-us {
+  font-family: 'Irish Grover', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.address, .contact-info {
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
